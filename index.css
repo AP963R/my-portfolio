@@ -322,6 +322,7 @@ section {
 
 #experience {
   position: relative;
+  padding: 2rem 0; /* Add some padding for better spacing */
 }
 
 .experience-sub-title {
@@ -329,33 +330,41 @@ section {
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
+  text-align: center; /* Center the subtitle */
 }
 
 .experience-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center; /* Center align items */
 }
 
 .article-container {
   display: flex;
-  text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content: center; /* Center articles within the container */
+  text-align: center; /* Center align text within each article */
 }
 
 article {
   display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+  flex-direction: column; /* Arrange content vertically within each article */
+  align-items: center; /* Center items horizontally */
+  width: calc(40% - 3.5rem); /* Adjusted width for spacing between columns */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
-article .icon {
-  cursor: default;
+article h3 {
+  margin: 0.5rem 0; /* Space between each skill */
 }
+
+.icon.arrow {
+  cursor: pointer;
+  margin-top: 2rem; /* Add some spacing above the arrow */
+}
+
 
 /* PROJECTS SECTION */
 
