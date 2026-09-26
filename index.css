@@ -349,18 +349,17 @@ section {
 }
 
 .article-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto;
   gap: 2.5rem;
-  justify-content: center; /* Center articles within the container */
-  text-align: center; /* Center align text within each article */
+  text-align: center;
 }
 
 article {
   display: flex;
   flex-direction: column; /* Arrange content vertically within each article */
   align-items: center; /* Center items horizontally */
-  width: calc(40% - 3.5rem); /* Adjusted width for spacing between columns */
+  width: calc(46% + 3.5rem); /* Adjusted width for spacing between columns */
   box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
